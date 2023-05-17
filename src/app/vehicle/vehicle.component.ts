@@ -17,6 +17,20 @@ export class VehicleComponent {
   get isEmpty() {
     return this.type == null || this.type == undefined;
   }
+  get VehicleName() {
+    switch (this.type) {
+      case VehicleType.car:
+        return 'Car';
+      case VehicleType.van:
+        return 'Var';
+      case VehicleType.truck:
+        return 'Truck';
+      case VehicleType.bus:
+        return 'Bus';
+      default:
+        return 'Unknown';
+    }
+  }
   get VehicleSize() {
     return VehicleSize;
   }

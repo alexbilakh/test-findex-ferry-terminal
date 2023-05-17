@@ -1,16 +1,18 @@
 .vehicle {
   border: 1px dashed #ccc;
   line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &.small {
-    width: 50px;
-    height: 40px;
-    text-align: center;
+    width: 80px;
+    min-height: 80px;
     background: lightgreen;
   }
   &.large {
-    width: 80px;
-    height: 40px;
-    text-align: center;
+    width: 110px;
+    min-height: 80px;
     background: lightblue;
   }
   &.empty {

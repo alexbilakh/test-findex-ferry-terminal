@@ -6,7 +6,8 @@
     empty: isEmpty
   }"
 >
-  <ng-container *ngIf="!isEmpty">{{
-    CarTicketCost[type] | currency : "USD"
-  }}</ng-container>
+  <ng-container *ngIf="!isEmpty">
+    {{ VehicleName }} <br />
+    {{ CarTicketCost[type] | currency : "USD" }}
+  </ng-container>
 </div>
