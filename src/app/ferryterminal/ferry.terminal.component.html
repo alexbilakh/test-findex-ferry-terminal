@@ -1,0 +1,9 @@
+<div>
+  <button (click)="getVehicle()">Get Vehicle</button>
+
+  <ferry [size]="VehicleSize.small" #smallFerry></ferry>
+  <ferry [size]="VehicleSize.large" #largeFerry></ferry>
+
+  Terminal Earning: {{ terminalEarning | currency : "USD" }} Worker Earning:
+  {{ terminalEarning * 0.1 | currency : "USD" }}
+</div>

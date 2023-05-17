@@ -1,0 +1,12 @@
+<div
+  [ngClass]="{
+    vehicle: true,
+    small: category == VehicleSize.small,
+    large: category == VehicleSize.large,
+    empty: isEmpty
+  }"
+>
+  <ng-container *ngIf="!isEmpty">{{
+    CarTicketCost[type] | currency : "USD"
+  }}</ng-container>
+</div>

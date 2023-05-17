@@ -1,0 +1,11 @@
+<div class="ferry">
+  <div class="vehicles-container">
+    <ng-container *ngFor="let vehicle of vehicles">
+      <vehicle [type]="vehicle.type" [category]="vehicle.category"></vehicle>
+    </ng-container>
+    <ng-container *ngFor="let empty of emptyFields">
+      <vehicle [category]="size"></vehicle>
+    </ng-container>
+  </div>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>

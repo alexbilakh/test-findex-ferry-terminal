@@ -1,0 +1,14 @@
+.ferry {
+  .vehicles-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  width: max-content;
+}
+.error {
+  font-size: 0.75rem;
+  color: lightcoral;
+}
